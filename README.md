@@ -1,53 +1,47 @@
-# ContactNova Search Engine POC
+# ContactNova Search Engine POC - Frontend
 
-This is a Proof of Concept (POC) for the ContactNova Search Engine, consisting of a FastAPI backend and a React frontend.
-
-## Project Structure
-
-- `backend/`: Contains the FastAPI backend application
-- `frontend/`: Contains the React frontend application
+This is the frontend component of the ContactNova Search Engine POC, built with React.
 
 ## Prerequisites
 
-- Python 3.11+
 - Node.js 14+
-- Docker and Docker Compose (optional, for containerized deployment)
+- npm 6+
 
-## Quick Start
+## Setup and Running
 
-1. Clone the repository:
+1. Install dependencies:
    ```
-   git clone  https://gitlab.stefanini.com/ai/contactnova-poc.git
-   cd contactnova-poc
-   ```
-
-2. Start the backend:
-   - Follow the instructions in `backend/README.md`
-
-3. Start the frontend:
-   - Follow the instructions in `frontend/README.md`
-
-4. Access the application at `http://localhost:3000`
-
-## Docker Deployment
-
-To deploy the entire application using Docker:
-
-1. Ensure Docker and Docker Compose are installed on your system.
-
-2. Build and start the containers:
-   ```
-   docker-compose up --build
+   npm install
    ```
 
-3. Access the frontend at `http://localhost:3000` and the backend API at `http://localhost:8000`
+2. Start the development server:
+   ```
+   npm start
+   ```
 
-## Development
+3. The application will be available at `http://localhost:3000`.
 
-For detailed instructions on developing each component, refer to the README files in the respective directories:
+## Available Scripts
 
-- Backend: `backend/README.md`
-- Frontend: `frontend/README.md`
+- `npm start`: Runs the app in development mode
+- `npm test`: Launches the test runner
+- `npm run build`: Builds the app for production
+
+## Project Structure
+
+- `src/`: Contains the main source code
+- `public/`: Contains public assets and the main HTML file
+
+## Connecting to the Backend
+
+The frontend is configured to connect to the backend API running on `http://localhost:8000`. If you need to change this, update the API base URL in the relevant components.
+
+## Learn More
+
+To learn more about React and the tools used in this project, check out the following resources:
+
+- [React documentation](https://reactjs.org/)
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
 
 ## License
 
